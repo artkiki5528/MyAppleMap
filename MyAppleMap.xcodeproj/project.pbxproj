@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B057DFFD21D06578006B86CC /* wuling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B057DFFC21D06578006B86CC /* wuling.jpg */; };
 		B0D9CF9621CCBBB400A4E26A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D9CF9521CCBBB400A4E26A /* AppDelegate.swift */; };
 		B0D9CF9821CCBBB400A4E26A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D9CF9721CCBBB400A4E26A /* ViewController.swift */; };
 		B0D9CF9B21CCBBB400A4E26A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D9CF9921CCBBB400A4E26A /* Main.storyboard */; };
 		B0D9CF9D21CCBBB500A4E26A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D9CF9C21CCBBB500A4E26A /* Assets.xcassets */; };
 		B0D9CFA021CCBBB500A4E26A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D9CF9E21CCBBB500A4E26A /* LaunchScreen.storyboard */; };
+		B0D9CFA921CCBDA700A4E26A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D9CFA821CCBDA700A4E26A /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B057DFFC21D06578006B86CC /* wuling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wuling.jpg; sourceTree = "<group>"; };
 		B0D9CF9221CCBBB400A4E26A /* MyAppleMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAppleMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D9CF9521CCBBB400A4E26A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0D9CF9721CCBBB400A4E26A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		B0D9CF9C21CCBBB500A4E26A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0D9CF9F21CCBBB500A4E26A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0D9CFA121CCBBB500A4E26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0D9CFA821CCBDA700A4E26A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0D9CFA921CCBDA700A4E26A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				B0D9CF9421CCBBB400A4E26A /* MyAppleMap */,
 				B0D9CF9321CCBBB400A4E26A /* Products */,
+				B0D9CFA721CCBDA700A4E26A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +60,7 @@
 		B0D9CF9421CCBBB400A4E26A /* MyAppleMap */ = {
 			isa = PBXGroup;
 			children = (
+				B057DFFC21D06578006B86CC /* wuling.jpg */,
 				B0D9CF9521CCBBB400A4E26A /* AppDelegate.swift */,
 				B0D9CF9721CCBBB400A4E26A /* ViewController.swift */,
 				B0D9CF9921CCBBB400A4E26A /* Main.storyboard */,
@@ -62,6 +69,14 @@
 				B0D9CFA121CCBBB500A4E26A /* Info.plist */,
 			);
 			path = MyAppleMap;
+			sourceTree = "<group>";
+		};
+		B0D9CFA721CCBDA700A4E26A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0D9CFA821CCBDA700A4E26A /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +111,11 @@
 				TargetAttributes = {
 					B0D9CF9121CCBBB400A4E26A = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,6 +145,7 @@
 				B0D9CFA021CCBBB500A4E26A /* LaunchScreen.storyboard in Resources */,
 				B0D9CF9D21CCBBB500A4E26A /* Assets.xcassets in Resources */,
 				B0D9CF9B21CCBBB400A4E26A /* Main.storyboard in Resources */,
+				B057DFFD21D06578006B86CC /* wuling.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
